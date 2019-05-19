@@ -1,5 +1,5 @@
 let Cells = [];
-let rx,ry,w,i,j,turn = 0,max = 2;
+let rx,ry,w,i,j,turn = 0,max = 8;
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
 	let k = 0;
