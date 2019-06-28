@@ -1,6 +1,6 @@
 # Chain Reaction!
 1. I have coded the game chain reaction in javascript, my code is a bit messy but i think it will be readable enough. you can open it by the index.html
-file or this link ![here](https://divy1211.github.io/Chain-reaction/)
+file or this link [here](https://divy1211.github.io/Chain-reaction/)
 2. It is a two to eight player game. if you find a bug you can open a pull request
 
 # Prerequisities
