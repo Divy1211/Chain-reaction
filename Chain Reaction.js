@@ -1,5 +1,6 @@
 let Cells = [];
-let rx,ry,w,i,j,turn = 0,max = 8;
+let rx,ry,w,i,j,turn = 0,max = 8,chance = 0;
+let s = [];
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
 	let k = 0;
@@ -23,6 +24,16 @@ function draw() {
 	for(let cell of Cells) {
 		cell.show();
 	}
+	let c = 0;
+	for(let i = 0; chance > 8 && i < Cells.length; i++) {
+		if(Cells[i].player == turn)
+			c++;
+	}
+	if(chance > 8 && c == 0) {
+		s.push(turn);
+		turn++;
+		turn = turn%max; 
+	}
 }
 //5x8
 //10x16
@@ -35,11 +46,15 @@ function mousePressed() {
 				cell.level++;
 				cell.player = turn;
 				turn++;
+				chance++;
 			}
 		}
 	}
-	if(turn == max)
-		turn = 0;
+
+
+	while(s.indexOf(turn)!==-1 && s.length!== max-1)
+		turn++;
+	turn = turn%max;
 }
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
