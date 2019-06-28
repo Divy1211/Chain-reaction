@@ -31,6 +31,11 @@ function draw() {
 	}
 	if(chance > 8 && c == 0) {
 		s.push(turn);
+		if(s.length == max-1) {
+			for(let c = 0; s.indexOf(c)==-1; c++)
+			alert(`P${c+1} has won the game!`);
+			location.reload();
+		}
 		turn++;
 		turn = turn%max; 
 	}
