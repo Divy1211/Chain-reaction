@@ -8,7 +8,7 @@ file or this link [here](https://divy1211.github.io/Chain-reaction/)
 
 # How the program works
 
-1. Two TO EIGHT players can play this game
+1. Two to eight players can play this game
 
 2.How to play:
 1. The gameplay takes place in an m×n board. The most commonly used size of the board is 9×6.
