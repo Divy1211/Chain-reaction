@@ -3,7 +3,7 @@
 file or this link [here](https://divy1211.github.io/Chain-reaction/)
 2. It is a two to eight player game. if you find a bug you can open a pull request
 
-# Prerequisities
+# Prerequisites
 1. Any Internet browser.
 
 # How the program works
